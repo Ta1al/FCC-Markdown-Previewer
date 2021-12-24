@@ -1,10 +1,17 @@
 body {
   margin: 20px;
   background-color: black;
-  color: wheat;
+  color: white;
+  text-align: center;
 }
-
-#preview {
+#editor {
   background-color: grey;
-  padding: 1em
+  color: aqua;
+}
+#preview {
+  text-align: left;
+  background-color: rgb(26, 23, 23);
+  border-radius: 5px;
+  padding: 1em;
+  overflow: auto;
 }

@@ -8,28 +8,26 @@ function Previewer() {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-6">
-          <h1>Markdown Previewer</h1>
-          <textarea
-            id="editor"
-            className="form-control"
-            rows="10"
-            value={markdown}
-            onChange={handleChange}
-          ></textarea>
-        </div>
-        <div className="col-md-6">
-          <h1>Preview</h1>
-          <div
-            id="preview"
-            className="preview"
-            dangerouslySetInnerHTML={{
-              __html: marked.parse(markdown, { breaks: true }),
-            }}
-          ></div>
-        </div>
+    <div className="container-fluid">
+      <div>
+        <h1>Markdown Previewer</h1>
+        <textarea
+          id="editor"
+          className="form-control"
+          rows="10"
+          value={markdown}
+          onChange={handleChange}
+        ></textarea>
+      </div>
+      <div>
+        <h1>Preview</h1>
+        <div
+          id="preview"
+          className="preview"
+          dangerouslySetInnerHTML={{
+            __html: marked.parse(markdown, { breaks: true }),
+          }}
+        ></div>
       </div>
     </div>
   );
